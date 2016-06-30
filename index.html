@@ -1,0 +1,486 @@
+﻿<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Hotel Lipovskaya</title>
+        <!--  Fonts -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <!-- jQuery -->
+        <script src="js/jquery-2.2.3.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <!-- Bootstrap  -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Google Maps API -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI-IoamOqosZtFQUNNS_s4ZnexHrKOE3M"
+        type="text/javascript"></script>
+        <!-- Counter JS -->
+        <script src="js/jQuerySimpleCounter.js"></script>
+        <!-- Bootstrap Image Gallery -->
+        <script src="css/ekko-lightbox.min.css"></script>
+        <script src="js/ekko-lightbox.min.js"></script>
+
+        <script src="js/hotel.js"></script>
+        <link href="css/grayscale.css" rel="stylesheet">
+        <link href="css/hotel.css" rel="stylesheet">
+        <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
+
+
+    </head>
+
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-custom navbar-fixed-top" >
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"><i class="fa fa-bars"></i></button>
+                    
+                </div>
+                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li>
+                            <a lang="en" class="page-scroll" href="#Booking">Booking</a>
+                            <a lang="ru" class="page-scroll" href="#Booking">Резервация</a>
+                        </li>
+                        <li>
+                            <a lang="en" class="page-scroll" href="#Rooms">Prices</a>
+                            <a lang="ru" class="page-scroll" href="#Rooms">Цены</a>
+                        </li>
+                        <li>
+                            <a lang="en" class="page-scroll" href="#Services">Services</a>
+                            <a lang="ru" class="page-scroll" href="#Services">Услуги</a>
+                        </li>
+                        <li>
+                            <a lang="en" class="page-scroll" href="#Gallery">Gallery</a>
+                            <a lang="ru" class="page-scroll" href="#Gallery">Фотогалерея</a>
+                        </li>
+                        <li>
+                            <a lang="en" class="page-scroll" href="#Location">Location</a>
+                            <a lang="ru" class="page-scroll" href="#Location">Расположение</a>
+                        </li>
+                        <li class="flags">
+                            <button type="button" class="ru-button">
+                                <img src="img/ru.png" alt="ru flag" height="30"/></button>
+                            <button type="button" class="eng-button">
+                                <img src="img/en.png" alt="eng flag" height="30"/></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <!-- Booking section -->
+        <section id="parallax-main"  data-type="background" data-speed="10">
+            <div id="Booking" class="content-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-5 col-sm-offset-7 col-xs-12 ">
+                            <form class="booking-form">
+                                <h4 lang="ru"> Мы приветствуем Вас на странице Гостиницы Липовская</h4>
+                                <h4 lang="en"> Welcome to webpage Hotel Lipovskaya</h4>
+                                <p lang="ru"> Для резервации звоните по телефону </p>
+                                <p lang="en"> For booking call on </p>
+                                <p class="phone-booking"><i class="fa fa-phone"> </i> +7 (4742) 27-61-12</p>
+                                <p lang="ru"> Или отправьте контактную информацию и наш администратор Вам перезвонит</p>
+                                <p lang="en"> Or send your contacts and our administrator will call you back </p>
+
+                                <div class="input-group">
+                                    <span class="input-group-addon" ></span>
+                                    <input  lang="en" type="text"  class="form-control name" placeholder="Name" >
+                                    <input  lang="ru" type="text"  class="form-control name" placeholder="Имя" >
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-addon" ></span>
+                                    <input lang="en" type="text"  class="form-control surname" placeholder="Surname" >
+                                    <input lang="ru" type="text"  class="form-control surname" placeholder="Фамилия">
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-addon" ></span>
+                                    <input lang="en" type="text"  class="form-control phone" placeholder="Phone" >
+                                    <input lang="ru" type="text"  class="form-control phone" placeholder="Телефон" >
+                                </div>
+                                <div class="input-group">
+                                    <span class="input-group-addon" ></span>
+                                    <textarea lang="en" class="form-control comment" rows="2" placeholder="Additional information"></textarea>
+                                    <textarea lang="ru" class="form-control comment" rows="2" placeholder="Дополнительная информация"></textarea>
+                                </div>
+                                <button lang="en" type="button"  class="btn btn-primary myButton">
+                                    Send
+                                </button>
+                                <button lang="ru" type="button"  class="btn btn-primary myButton">
+                                    Отправить
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prices Section -->
+        <section id="Rooms" class="content-section text-center" data-type="background" data-speed="10">
+            <div class="container">
+                <div class="col-lg-12 col-md-12">
+                    <h2 lang="en">Rooms and prices</h2>
+                    <h2 lang="ru">Номера и цены</h2>
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a lang="en" data-toggle="tab" href="#standart">Standart</a></li>
+                        <li class="active"><a lang="ru" data-toggle="tab" href="#standart">Стандарт</a></li>
+                        <li><a lang="en" data-toggle="tab" href="#luxe">Luxe</a></li>
+                        <li><a lang="ru" data-toggle="tab" href="#luxe">Люкс</a></li>
+                        <li><a lang="en" data-toggle="tab" href="#family">Family</a></li>
+                        <li><a lang="ru" data-toggle="tab" href="#family">Семейный</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <!--tab room standart-->
+                        <div id="standart" class="tab-pane fade in active">
+                            <div class="row">
+                                <div class="col-md-6 room_img">
+                                    <div class="room-tabs-gallery-image">
+                                        <img class="img-responsive room-tabs-gallery-preview" src="img/original/standart2.jpg" alt="Standart Room" title="The Image Title">
+                                        <div class="price">
+                                            <p lang="en">Price: $ 43.00 / Day </p>
+                                            <p lang="ru">Цена: &#8381; 3000 / День </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 room_description">
+                                    <h3 lang="en">Standart</h3>
+                                    <h3 lang="ru">Стандарт</h3>
+                                    <p lang="ru"> Номер <b>Стандарт</b> предполагает комфорт, который обеспечивают изысканная мебель и необходимая техника. Предметы интерьера:
+                                        изящные лампы, журнальный столик, удобные кресла в сочетании с красивыми шторами, а также наличие ТВ, кабельного телевидения смогут
+                                        удовлетворить потребности самых требовательных гостей. Плата за номер включает парковочное место, завтрак и ужин. </p>
+                                    <p lang="en"> Room <b>Standart</b> will give you comfort that is provided by elegant furniture and necessary equipment. Interior items:
+                                        distinguished lamps, coffee table, cosy armchairs combined with beautiful curtains and cable tv that can satisfy needs of the most
+                                        demanding guests. Parking place, breakfast and dinner are included in price. </p>
+                                    <div class="row">
+                                        <div class="col-sm-6  col-sm-12">
+                                            <ul class="list-group room-tabs-checklist">
+                                                <li lang="ru" class="list-group-item"><i class="fa fa-check"></i> Площадь 25 кв.м</li>
+                                                <li lang="en" class="list-group-item"><i class="fa fa-check"></i> Size 25 sq.m</li>
+                                                <li lang="ru" class="list-group-item"><i class="fa fa-check"></i> 1 двухместная кровать</li>
+                                                <li lang="en" class="list-group-item"><i class="fa fa-check"></i> 1 double bed </li>
+                                                <li lang="en" class="list-group-item"><i class="fa fa-check"></i> Bathroom</li>
+                                                <li lang="ru" class="list-group-item"><i class="fa fa-check"></i> Ванная комната</li>
+                                                <li lang="en" class="list-group-item"><i class="fa fa-check"></i> Air conditioning</li>
+                                                <li lang="ru" class="list-group-item"><i class="fa fa-check"></i> Кондиционер</li>
+                                                <li lang="en" class="list-group-item"><i class="fa fa-check"></i> Wi-Fi</li>
+                                                <li lang="ru" class="list-group-item"><i class="fa fa-check"></i> Wi-Fi</li>
+                                                <li lang="en" class="list-group-item"><i class="fa fa-check"></i> Max. 2 guests</li>
+                                                <li lang="ru" class="list-group-item"><i class="fa fa-check"></i> Максимально 2 гостя</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--tab room luxe-->
+                        <div id="luxe" class="tab-pane fade">
+                            <div class="row">
+                                <div class="col-md-6 room_img">
+                                    <div class="room-tabs-gallery">
+                                        <div class="room-tabs-gallery-image">
+                                            <img class="img-responsive room-tabs-gallery-preview" src="img/original/luxe2.jpg" alt="Luxe Room" title="The Image Title">
+                                            <div class="price">
+                                                <p lang="en">Price: $ 57.00 / Day </p>
+                                                <p lang="ru">Цена: &#8381; 4000 / День </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-6 room_description">
+                                    <h3 lang="en">Luxe</h3>
+                                    <h3 lang="ru">Люкс</h3>
+                                    <p lang="ru">Номер <b>Люкс</b> – это гармоничное сочетание дизайна с продуманным до мелочей интерьером.  Сосредоточиться на работе
+                                        и полноценно отдохнуть вам поможет выделенная рабочая, гостевая и спальная зона. Мягкая удобная мебель и современная техника позволят с
+                                        комфортом провести время. Плата за номер включает парковочное место, завтрак и ужин. </p>
+                                    <p lang="en"> Room <b>Luxe</b> is harmonious combination of design and interior considered to the detail. Separated work , rest and guest zones
+                                        guarantee you total relax as well as possibility to focus on your work. Soft and convenient furniture and modern equipment will help you to
+                                        spend time with comfort. Parking place, breakfast and dinner are included in price. </p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <ul class="list-group room-tabs-checklist">
+                                                <li lang="ru" class="list-group-item"><i class="fa fa-check"></i> Площадь 35 кв.м</li>
+                                                <li lang="en" class="list-group-item"><i class="fa fa-check"></i> Size 35 sq.m</li>
+                                                <li lang="ru" class="list-group-item"><i class="fa fa-check"></i> 1 двухместная кровать</li>
+                                                <li lang="en" class="list-group-item"><i class="fa fa-check"></i> 1 double bed </li>
+                                                <li lang="en" class="list-group-item"><i class="fa fa-check"></i> Bathroom</li>
+                                                <li lang="ru" class="list-group-item"><i class="fa fa-check"></i> Ванная комната</li>
+                                                <li lang="en" class="list-group-item"><i class="fa fa-check"></i> Air conditioning</li>
+                                                <li lang="ru" class="list-group-item"><i class="fa fa-check"></i> Кондиционер</li>
+                                                <li lang="en" class="list-group-item"><i class="fa fa-check"></i> Wi-Fi</li>
+                                                <li lang="ru" class="list-group-item"><i class="fa fa-check"></i> Wi-Fi</li>
+                                                <li lang="en" class="list-group-item"><i class="fa fa-check"></i> Max. 2 guests</li>
+                                                <li lang="ru" class="list-group-item"><i class="fa fa-check"></i> Максимально 2 гостя</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--tab room family-->
+                        <div id="family" class="tab-pane fade">
+                            <div class="row">
+                                <div class="col-md-6 room_img">
+                                    <div class="room-tabs-gallery">
+                                        <div class="room-tabs-gallery-image">
+                                            <img class="img-responsive room-tabs-gallery-preview" src="img/original/family.jpg" alt="Family Room" title="The Image Title">
+                                            <div class="price">
+                                                <p lang="en">Price: $ 65.00 / Day </p>
+                                                <p lang="ru">Цена: &#8381; 4500 / День </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 room_description">
+                                    <h3> Family</h3>
+                                    <p lang="ru"> Номер <b>Семейный</b> – отличный вариант для проведения досуга в течение продолжительного времени. Двухкомнатный номер состоит из
+                                        спальни, гостиной и мини-кухни. Здесь вы можете поработать или просто расслабиться в атмосфере домашнего уюта. Стиль и эстетика этого номера
+                                        дают ощущение спокойствия и безмятежности. Плата за номер включает парковочное место, завтрак и ужин. </p>
+                                    <p lang="en"> Room <b>Family</b>  is ideal variant for spending time over a continuous period. Double room number consists of bedroom, living room
+                                        and mini kitchen. You can work there or just relax in the atmosphere of home coziness. Perfect style and esthetics of this number give you the
+                                        feeling of absolute peace and serenity. Parking place, breakfast and dinner are included in price. </p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <ul class="list-group room-tabs-checklist">
+                                                <li lang="ru" class="list-group-item"><i class="fa fa-check"></i> Площадь 65 кв.м</li>
+                                                <li lang="en" class="list-group-item"><i class="fa fa-check"></i> Size 65 sq.m</li>
+                                                <li lang="ru" class="list-group-item"><i class="fa fa-check"></i>1 двухместная кровать и 1 одноместная</li>
+                                                <li lang="en" class="list-group-item"><i class="fa fa-check"></i> 1 double bed and 1 single bed</li>
+                                                <li lang="en" class="list-group-item"><i class="fa fa-check"></i> Bathroom</li>
+                                                <li lang="ru" class="list-group-item"><i class="fa fa-check"></i> Ванная комната</li>
+                                                <li lang="en" class="list-group-item"><i class="fa fa-check"></i> Air conditioning</li>
+                                                <li lang="ru" class="list-group-item"><i class="fa fa-check"></i> Кондиционер</li>
+                                                <li lang="en" class="list-group-item"><i class="fa fa-check"></i> Wi-Fi</li>
+                                                <li lang="ru" class="list-group-item"><i class="fa fa-check"></i> Wi-Fi</li>
+                                                <li lang="en" class="list-group-item"><i class="fa fa-check"></i> Max. 3 guests</li>
+                                                <li lang="ru" class="list-group-item"><i class="fa fa-check"></i> Максимально 3 гостя</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6"></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Servises Section -->
+        <section id="Services" class="content-section text-center">
+
+            <h2 lang="en">Additional services</h2>
+            <h2 lang="ru">Дополнительные услуги</h2>
+
+            <div class="services" id="sc-services">
+                <div class="container">
+                    <div class="row service-row">
+                        <div class="col-md-4 col-sm-6 service ">
+                            <div class="service-icon"><i class="fa fa-car"></i></div>
+
+                            <h3 lang="ru">Бесплатная стоянка</h3>
+                            <h3 lang="en">Free parking</h3>
+                            <p lang="ru">Мы предоставляем для наших гостей бесплатную стоянку</p>
+                            <p lang="en">We are providing our guests with free parking</p>
+                        </div>
+                        <div class="col-md-4 col-sm-6 service ">
+                            <div class="service-icon"><i class="fa fa-paw"></i></div>
+                            <h3 lang="ru">Летнее кафе</h3>
+                            <h3 lang="en">On air cafe</h3>
+                            <p lang="ru">В теплое время года наши гости могут насладиться едой в нашем  летнем кафе</p>
+                            <p lang="en">During the warm seasons guests may enjoy food in our summer cafe</p>
+                        </div>
+                        <div class="col-md-4 col-sm-6 service ">
+                            <div class="service-icon"><i class="fa fa-fire"></i></div>
+                            <h3 lang="ru">Теплица</h3>
+                            <h3 lang="en">Greenhouse</h3>
+                            <p lang="ru">Овощи для  гостей мы выращиваем в своей теплице</p>
+                            <p lang="en">We raise fruits and vegetables for our guests in own greenhouse</p>
+                        </div>
+                        <div class="col-md-4 col-sm-6 service">
+                            <div class="service-icon"><i class="fa fa-soccer-ball-o"></i></div>
+                            <h3 lang="ru">Мангал</h3>
+                            <h3 lang="en">Grill</h3>
+                            <p lang="ru">В любое время наши гости могут воспользоваться мангалом и грилем </p>
+                            <p lang="en">At any time our guests may use grill or brazier</p>
+                        </div>
+                        <div class="col-md-4 col-sm-6 service">
+                            <div class="service-icon"><i class="fa fa-lock"></i></div>
+                            <h3 lang="ru">Прачечная</h3>
+                            <h3 lang="en">Laundry</h3>
+                            <p lang="ru">Мы предоставляем бесплатные услуги прачечной</p>
+                            <p lang="en">We offer free laundry service</p>
+                        </div>
+                        <div class="col-md-4 col-sm-6 service">
+                            <div class="service-icon"><i class="fa fa-coffee"></i></div>
+                            <h3 lang="ru">24ч въезд/выезд</h3>
+                            <h3 lang="en">24h check in/out</h3>
+                            <p lang="ru">Для удобства гостей мы предоставляем возможность въезда/выезда в любое время  </p>
+                            <p lang="en">For guests' convenience we offer check in/out at any time</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="Gallery" class=" content-section text-center">
+            <h2 lang="en">Gallery</h2>
+            <h2 lang="ru">Фотогалерея</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="image">
+                            <a href="img/original/01.jpg" data-toggle="lightbox"  class="" >
+                                <img src="img/thumbnails/01.jpg"  class="img-responsive" alt="hotel">
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="image">
+                            <a href="img/original/02.jpg" data-toggle="lightbox" class=""  >
+                                <img src="img/thumbnails/02.jpg" class="img-responsive" alt="room">
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="image">
+                            <a href="img/original/03.jpg" data-toggle="lightbox" class="" >
+                                <img src="img/thumbnails/03.jpg" class="img-responsive" alt="room">
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="image">
+                            <a href="img/original/04.jpg" data-toggle="lightbox" class="" >
+                                <img src="img/thumbnails/04.jpg" class="img-responsive" alt="cafe">
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="image">
+                            <a href="img/original/05.jpg" data-toggle="lightbox" class="" >
+                                <img src="img/thumbnails/05.jpg"  class="img-responsive" alt="room">
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="image">
+                            <a href="img/original/06.jpg" data-toggle="lightbox" class="" >
+                                <img src="img/thumbnails/06.jpg" class="img-responsive" alt="hotel">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--        Counter Section-->
+        <section id="Counter" class="content-section"  data-type="background" data-speed="8">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <div class="counter-box">
+                            <div id="icon1" class="counter-icon"><i class="fa fa-globe"></i></div>
+                            <div class="counter-number" id="count1">0</div>
+                            <div lang="en" class="counter-description">International guests</div>
+                            <div lang="ru" class="counter-description">Зарубежных гостей</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-6 ">
+                        <div class="counter-box">
+                            <div id="icon2" class="counter-icon"><i class="fa fa-eye"></i></div>
+                            <div class="counter-number" id="count2">0</div>
+                            <div lang="en" class="counter-description">Followers on social networks</div>
+                            <div lang="ru" class="counter-description">Подписчиков в соцсетях</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-6 ">
+                        <div class="counter-box">
+                            <div id="icon3" class="counter-icon"><i class="fa fa-sun-o"></i></div>
+                            <div class="counter-number" id="count3">0</div>
+                            <div lang="en" class="counter-description">Kg growed vegetables</div>
+                            <div lang="ru" class="counter-description">Кг вырощенных овощей</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <div class="counter-box">
+                            <div id="icon4" class="counter-icon "><i class="fa fa-star"></i></div>
+                            <div class="counter-number" id="count4">0</div>
+                            <div lang="en" class="counter-description"> Five  star  Ratings</div>
+                            <div lang="ru" class="counter-description"> Оценок 5 звезд</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Location Section-->
+        <section id="Location" class=" content-section text-center">
+            <h2 lang="ru">Расположение</h2>
+            <h2 lang="en">Location</h2>
+            <div id="map">
+            </div>
+            <div class="map-adress">
+                <a title="Google Maps" href="https://goo.gl/jZTEHi"> 52°36'40.2"N 39°35'19.8"E </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-box center">
+                    <div class="footer-brand">
+                        <h2 lang="ru">Гостиница Липовская</h2>
+                        <h2 lang="en">Hotel Lipovskaya</h2>
+                    </div>
+                    <div lang="ru" class="address"> <i class="fa fa-map-marker"></i>Ул. Липовская, 6, Липецк, 398002, Россия</div>
+                    <div lang="en" class="address"> <i class="fa fa-map-marker"></i>Lipovskaya st. 6, Lipetsk, 398002, Russia</div>
+                    <div class="phone"> <i class="fa fa-phone"></i>+7 (4742) 27-61-12</div>
+                    <div class="socials">
+                        <ul class="list-inline " >
+                            <li><a href="https://vk.com/public78413465"> <div class="service-icon"><i class="fa fa-vk"></i></div></a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100004129128365"> <div class="service-icon"><i class="fa fa-facebook"></i></div></a></li>
+                            <li><a href="https://twitter.com/hotellip"> <div class="service-icon"><i class="fa fa-twitter"></i></div></a></li>
+                            <li><a href="http://instagram.com/hotellip"> <div class="service-icon"><i class="fa fa-instagram"></i></div></a></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="copyright">
+                        qfedi00 © <span id="copyright-year">2016</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
